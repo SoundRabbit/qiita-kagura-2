@@ -1,1 +1,1 @@
-[Kagura + Rust でWebページを作成 - 2]()
+[Kagura + Rust でWebページを作成 - 2](https://qiita.com/ne_no_usa/items/cf8d4adaf1790bb09436)
