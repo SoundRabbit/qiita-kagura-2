@@ -6,6 +6,18 @@ module.exports = {
     resolve: {
         extensions: [".js"]
     },
+    module: {
+        rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
+                ],
+            },
+        ],
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(__dirname, "./src/index.html")
@@ -13,5 +25,6 @@ module.exports = {
         new WasmPackPlugin({
             crateDirectory: path.join(__dirname, "./")
         })
-    ]
+    ],
+    mode: "production",
 };

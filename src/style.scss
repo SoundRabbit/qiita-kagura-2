@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+#app {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > * {
+        min-width: 56vw;
+    }
+}
